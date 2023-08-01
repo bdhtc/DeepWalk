@@ -8,7 +8,7 @@
     <artifactId>DeepWalkMaven</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <build>
+    <!--<build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -19,7 +19,7 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+    </build>-->
 
     <properties>
         <dl4j.version>1.0.0-beta3</dl4j.version>
