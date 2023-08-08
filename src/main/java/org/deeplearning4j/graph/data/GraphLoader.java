@@ -69,7 +69,7 @@ public class GraphLoader {
         Graph<String, String> graph = new Graph<>(numVertices, allowMultipleEdges, new StringVertexFactory());
         EdgeLineProcessor<String> lineProcessor = new DelimitedEdgeLineProcessor(delim, false);
 
-        try (BufferedReader br = new BufferedReader(new FileReader(new File(path)))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(path))) {
             String line;
             while ((line = br.readLine()) != null) {
                 Edge<String> edge = lineProcessor.processLine(line);

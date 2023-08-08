@@ -48,9 +48,9 @@ public class DelimitedEdgeLineProcessor implements EdgeLineProcessor<String> {
         }
 
         String[] split = line.split(delimiter);
-        if (split.length != 2)
+        /*if (split.length != 2)
             throw new IllegalArgumentException(
-                            "Invalid line: expected format \"" + 0 + delimiter + 1 + "\"; received \"" + line + "\"");
+                            "Invalid line: expected format \"" + 0 + delimiter + 1 + "\"; received \"" + line + "\"");*/
 
         int from = Integer.parseInt(split[0]);
         int to = Integer.parseInt(split[1]);

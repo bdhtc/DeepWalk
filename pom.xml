@@ -20,6 +20,20 @@
             </plugin>
         </plugins>
     </build>-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <!--source 和 target根据个人需要自己修改-->
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <properties>
         <dl4j.version>1.0.0-beta3</dl4j.version>

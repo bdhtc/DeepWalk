@@ -5,7 +5,6 @@ import org.deeplearning4j.graph.iterator.GraphWalkIterator;
 import org.deeplearning4j.graph.iterator.RandomWalkIterator;
 import org.deeplearning4j.graph.models.deepwalk.DeepWalk;
 import org.nd4j.linalg.api.ndarray.INDArray;
-import org.nd4j.linalg.io.ClassPathResource;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -19,14 +18,14 @@ public class TestDeepWalk {
         int windowSize = 2;
         int walkLength = 8;
         double learningRate = 0.01;
-        int vertices = 10312;
+        int vertices = 17212;
 
        // ClassPathResource cpr = new ClassPathResource("/home/cogbot-developer/singnet/DeepWalkTest/src/dataset/BlogCatalog-dataset/data/edges.csv");
-        String fileEdges= "/home/cogbot-developer/singnet/DeepWalkTest/src/dataset/BlogCatalog-dataset/data/edges.csv";
+        String fileEdges = "D:\\job\\java\\DeepWalk\\src\\main\\resources\\CoOccur.edgelist";
 
         Graph<String,String> graph = null;
         try {
-            graph = GraphLoader.loadUndirectedGraphEdgeListFile(fileEdges, vertices, ",");
+            graph = GraphLoader.loadUndirectedGraphEdgeListFile(fileEdges, vertices, " ");
         } catch (IOException e) {
             e.printStackTrace();
         }
